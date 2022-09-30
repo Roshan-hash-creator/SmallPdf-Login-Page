@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+:root {
+    --color-text: #0055FF;
+    --bg-fb: rgb(59, 89, 152);
+    --btn-bg: rgb(0, 85, 255);
+    --btn-bg-light: rgb(24, 100, 251);
+    --bg-google: #4885ED;
+    --color-white: #fff;
+    --color-black: #000;
+    --font-bold: 500;
+    --font-normal: 400;
+    --color-input: rgb(33, 33, 33);
+    --color-black-light: rgb(117, 117, 117);
+}
+
+* {
+    margin: 0;
+
+}
+
+body {
+    font-size: 14px;
+    font-weight: var(--font-bold);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#background {
+    background: url(Images/background\ img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    position: relative;
+}
+
+.login {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    box-shadow: 1px 1px 14px rgb(149 232 160);
+}
+
+.login>button {
+    padding: 12px 60px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    color: green;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.login>button:hover {
+    background-color: rgb(230, 227, 227);
+}
+
+
+.container {
+    padding: 15px;
+}
+
+.dismiss {
+    position: absolute;
+    right: 20;
+    top: 15;
+    font-size: 20px;
+    padding: 10px;
+    transition: .2s all;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.dismiss:hover {
+    background-color: rgba(241, 241, 241, 0.878);
+}
+
+.newUser {
+    color: var(--color-black-light);
+}
+
+.newUser>p>span {
+    color: var(--color-text);
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.newUser>p>span:hover {
+    text-decoration: underline;
+}
+
+/* Box  */
+.body {
+    margin: 80px auto;
+    width: 450px;
+    padding: 10px;
+}
+
+.body>h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.google,
+.facebook {
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    background-color: var(--bg-google);
+    border-radius: 4px;
+    height: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.google>img,
+.facebook>img {
+    height: 100%;
+    box-sizing: content-box;
+    background-color: var(--color-white);
+    border-radius: 4px 0 0 4px;
+    padding: 0 2px;
+}
+
+.google>p,
+.facebook>p {
+    margin-left: 20px;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.facebook {
+    background-color: var(--bg-fb);
+}
+
+.facebook>img {
+    background-color: rgb(49, 75, 133);
+}
+
+.body>p {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* FORMS  */
+
+.input,
+.password {
+    position: relative;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    color: var(--color-black-light);
+    border: 1px solid rgb(224, 224, 224);
+    padding: 4px 0;
+}
+
+.input:hover {
+    outline: 1px solid black;
+}
+
+.input>i,
+.password>i {
+    position: absolute;
+    top: 11;
+    left: 20;
+}
+
+.input-box {
+    position: relative;
+    margin-left: 50px;
+}
+
+.input-box>input {
+    display: inline-block;
+    padding: 15px 0px 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+}
+
+.input-box>input:focus {
+    outline: none;
+}
+
+.input-box>label {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    pointer-events: none;
+    transition: .2s;
+
+}
+
+.input-box>input:focus~label,
+.input-box>input:valid~label {
+    top: -3px;
+    left: 0;
+    font-size: 12px;
+}
+
+.body>button {
+    width: 100%;
+    background-color: var(--btn-bg);
+    color: var(--color-white);
+    border: none;
+    height: 35px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s;
+    margin-top: 18px;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.body>button:hover {
+    background-color: var(--btn-bg-light);
+}
+
+.body>p>span {
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+.body>p>span:hover {
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .body {
+        width: 350px;
+        transition: .2s;
+    }
+
+    .dismiss {
+        top: 10;
+        right: 15;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .body {
+        width: 300px;
+        transition: .2s;
+    }
+}
