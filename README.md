@@ -1,4 +1,5 @@
-# SmallPdf-Login-Page
+# ScreenShots
+Here are some screenshot of the pages.
 
 ### Page Before login 
 <img src="https://user-images.githubusercontent.com/85190876/193468419-dec69771-33fd-423e-a958-9dd0ad5212b9.png" />
