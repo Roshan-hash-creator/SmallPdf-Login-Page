@@ -1,5 +1,7 @@
 # SmallPdf-Login-Page
 
-#### SignIn and Checkout Page
-<img src="https://user-images.githubusercontent.com/85190876/192106981-492c52f1-bc9e-4c7e-bbf8-e6b19c5c5f98.png" width="485" align="left" />
-<img src="https://user-images.githubusercontent.com/85190876/192106983-75662143-60d9-4ca0-a455-118e63435f6e.png" width="485" align="right" />
+### Page Before login 
+<img src="https://user-images.githubusercontent.com/85190876/193468419-dec69771-33fd-423e-a958-9dd0ad5212b9.png" />
+
+#### Actual Login Page
+<img src="https://user-images.githubusercontent.com/85190876/193468189-0b4a7e3d-2d67-4fac-8afe-fa0d60d049ed.png" />
