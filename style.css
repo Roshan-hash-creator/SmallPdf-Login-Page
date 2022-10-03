@@ -197,7 +197,7 @@ body {
     font-size: 12px;
 }
 
-.body>button {
+.body>form>button {
     width: 100%;
     background-color: var(--btn-bg);
     color: var(--color-white);
@@ -212,16 +212,16 @@ body {
     font-size: 15px;
 }
 
-.body>button:hover {
+.body>form>button:hover {
     background-color: var(--btn-bg-light);
 }
 
-.body>p>span {
+.body>form>p>span {
     color: var(--color-text);
     cursor: pointer;
 }
 
-.body>p>span:hover {
+.body>form>p>span:hover {
     text-decoration: underline;
 }
 
